@@ -1,13 +1,32 @@
 name: A01 ready
+description: Submit A01 EDA with your latest commit hash and a short note.
 title: "A01 ready: <netid>"
+labels: ["submission", "A01"]
+assignees: ["drdave-teaching"]
+
 body:
   - type: input
     id: commit
-    attributes: { label: Latest commit hash (from `git log --oneline -1`) }
-    validations: { required: true }
+    attributes:
+      label: Latest commit hash
+      description: Find via `git log --oneline -1`
+      placeholder: "e.g., 1a2b3c4 A01: first EDA run"
+    validations:
+      required: true
+
   - type: textarea
     id: note
     attributes:
-      label: What changed?
-      description: 1–2 sentences on what you tried and what you observed.
-    validations: { required: true }
+      label: What changed and what did you observe?
+      description: 1–2 sentences on what you tried and what you saw.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: CSVs saved in `A01-eda/data/`
+        - label: Figure(s) saved in `A01-eda/figs/`
+        - label: 2–3 sentence note added to `A01-eda/README.md`
