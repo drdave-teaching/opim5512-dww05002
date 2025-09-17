@@ -1,0 +1,13 @@
+name: A01 ready
+title: "A01 ready: <netid>"
+body:
+  - type: input
+    id: commit
+    attributes: { label: Latest commit hash (from `git log --oneline -1`) }
+    validations: { required: true }
+  - type: textarea
+    id: note
+    attributes:
+      label: What changed?
+      description: 1–2 sentences on what you tried and what you observed.
+    validations: { required: true }
