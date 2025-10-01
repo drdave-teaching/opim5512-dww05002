@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+A02-collab/data/raw.csv
+A02-collab/data/clean.csv
+A02-collab/data/clean_fe.csv
+A02-collab/data/metrics.json
+A02-collab/data/preds_test.csv
+A02-collab/data/error_by_decile.csv
