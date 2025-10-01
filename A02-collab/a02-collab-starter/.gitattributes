@@ -1,4 +1,0 @@
-* text=auto
-*.sh  text eol=lf
-*.ps1 text eol=crlf
-*.ipynb -diff text eol=lf
